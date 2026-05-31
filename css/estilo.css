@@ -1,0 +1,182 @@
+
+
+
+ /*Configuracoes gerais do site*/
+
+ :root{
+    --preto: rgb(0, 0, 0);
+    --branco:rgb(255, 255, 255);
+    --cinza: rgb(221, 220, 220);
+    --verde: rgb(6, 184, 6);
+    --verd2: rgb(82, 219, 82);
+   
+   
+   
+    --violt: rgb(238,130,238);
+    --orchd: rgb(218,112,214);
+    --viodk: rgb(148,0,211);
+    --indig: rgb(75,0,130);
+
+
+ }
+
+
+
+
+ *{margin: 0; border: 0; padding: 0;}    
+    
+    html{font-family: Arial, Helvetica, sans-serif; font-size: 1em;}
+
+    header{
+      background-color: var(--violt);
+      color: var(--branco);
+      padding: auto;
+      padding-top: 10px;
+      position: fixed;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+   }
+
+      nav{display: block; text-align: center; padding: 5px; font-size: 1.3em; word-spacing: 10px;}
+
+      a{text-decoration: none; color: var(--branco); font-weight: bold;}
+
+      a:hover{color: yellow;}
+
+      footer{
+         background-color: var(--violt);
+         color: var(--branco);
+         padding: 1%;
+         text-align: center;
+         font-weight: bold;}
+
+         body{background-color: var(--branco);}
+
+         main{
+             background-color: var(--branco);
+             padding: 1%;
+             margin: auto;
+             width: 90%;
+            
+         }
+
+         aside{
+            background-color: var(--branco);
+            padding: 1%;
+            margin: auto;
+            width: 90%;
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px 0px;
+         }
+        
+         /*Configuraçoes de titulos headlines*/
+
+         h1{font-size: 2em; margin-top: 1%;}
+         h2{font-size: 1.5em;}
+         h3{font-size: 3.5em;  font-family: "Seaweed Script", cursive; text-shadow: 2px 2px 2px var(--preto);}
+         h4{font-size: 1.2em;  text-shadow: 2px 2px 2px var(--preto)}
+         h1,h2,h3,h4,h5,h6{padding-top: 0.5%; padding-bottom: 0.5%;}
+
+         /*configuraçoes de imagens*/
+
+         img{width: 100%; padding-top: 2%;}
+
+         /*configuraçoes de paragrafos*/
+
+         p{padding-top: 1%; padding-bottom: 1%;}
+
+         /*configuraçoes de paragrafos para dispositivos moveis*/
+
+         @media(min-width: 320px) and (max-width: 1024){
+
+           p{padding-top: 3%; padding-bottom: 3%;}
+
+         }
+
+         /*divs*/
+
+         .separador{margin-top: 8%;}
+         .separador-conteudo{margin-top: 0.5;}
+
+         /*configuraços de divs para mobile*/
+
+
+         @media(min-width: 320px) and (max-width: 1024px){
+         .separador{margin-top: 8%;}
+         .separador-conteudo{margin-top: 0.5;}
+
+         }
+
+         /*configuraçoes da grade de conteudo - grids*/
+
+         .grid-conteudo{background-color: var(--branco); padding-top: 150px;}
+
+
+         .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            max-width: 1024px;
+            margin: auto;
+            gap: 10px
+         }
+
+         .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+
+         /*Trabalhando com flexbox*/
+
+
+           .grid-equipe{background-color: var(--branco); padding-top: 150px;}
+
+
+         .grid-equipe-sb{
+           
+            display: flex; /*alterando o tipo de display para flex*/
+            justify-content: center; /*centralizando horizontalmente*/
+            align-items: center; /*centralizando verticalmente*/
+            flex-wrap: wrap; /*alinhar ou "quebrar" conforme o tamanho da tela*/
+            max-width: 1024px;
+            margin: auto;
+            gap: 8px;
+            padding: auto;
+         }
+
+         .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+
+
+         /*configuraçao de grid para mobile*/
+         @media(min-width: 320px) and (max-width: 1024px){
+             .grid-conteudo{background-color: var(--cinza);}
+
+
+         .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            max-width: 1024px;
+            margin: auto;
+            gap: 2px
+         }
+
+         .grid div{background-color: var(--branco); text-align: center; padding: 2px;}
+
+         }
+
+         /*configuraçoes para botoes de açao*/
+         button{
+            padding: 8px 20px 8px 20px;
+            background-color: var(--verde);
+            color: var(--branco);
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+            display: block;
+            margin: auto;
+            transition: 0.4s ease;
+         }
+
+         button:hover{background: var(--verd2); color: var(--preto);}
+
+         ul{padding-left: 3%;}
+
+         
+         
